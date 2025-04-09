@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial', sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+section header ul{
+   display: flex;
+   text-align: center;
+   justify-content: center; 
+}
+section header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+section header ul li a{
+   color: #111;
+   text-decoration: none;
+   font-size: 13px; 
+}
+section header ul li a:hover{
+    text-decoration: underline;
+}
+section header ul li button{
+    padding: 8px 16px;
+    border: 1px solid #1a73e8;
+    border-radius: 20px; 
+    background-color: #1a73e8;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: -20px;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+section header ul li button:hover{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+section .main{
+    width: 580px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section .main .searchBox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+section .main .searchBox .search{
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+section .main .searchBox .icons{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+}
+section .main .buttons{
+    margin-top: 20px;
+}
+section .main .buttons button{
+   margin: 0 5px;
+   padding: 12px 20px; 
+   color: #111;
+   font-size: 14px;
+   border: none;
+   cursor: pointer;
+   border-radius: 4px;
+   border: 1px solid transparent;
+   outline: none;
+}
+section .main .buttons button:hover{
+    border: 1px solid #ccc; 
+}
+section .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f2f2f2;
+}
+section .footer .row{
+    padding: 10px 20px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+section .footer .row.row2{
+    display: flex;
+    justify-content: space-between;
+}
+section .footer .row.row2 ul{
+    display: flex;
+}
+section .footer .row.row2 ul li{
+    list-style: none;
+}
+section .footer .row.row2 ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #262626;
+    margin-right: 25px;
+}
+section .footer .row.row2 ul:nth-child(2) li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #262626;
+    margin-right: 0px;
+    margin-left: 25px;
+}
